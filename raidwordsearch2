@@ -106,6 +106,30 @@ func Diagonale(diagonale) {
 				print(l)
 			}
 		}
+		for j := 9; j >= 0; j-- {
+            l[count] = diagonale[j][i]
+            count += 1
+            main(l)
+            ifmot == true {
+                print(l)
+            }
+        }
+		for x := 9; x >= 0; x--{
+			l[count] = diagonale[x-1][i]
+			count +=1
+			main(l)
+			ifmot == true {
+				print(l)
+			}
+		}
+		for y := 9; y >= 0; y--{
+			l[count] = diagonale[y][i-1]
+			count +=1
+			main(l)
+			ifmot == true {
+				print(l)
+			}
+		}
     }
     return
 }
